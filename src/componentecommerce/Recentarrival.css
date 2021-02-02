@@ -1,0 +1,38 @@
+.product{
+    display: flex;
+    flex-direction: column;
+  
+   z-index: 4;
+   justify-content:flex-end;
+  }
+.imagepro{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  
+}
+.addbutton{
+    width: 200px;
+    height: 30px;
+  
+  
+    color: black;
+    text-align: center;
+    font-size: 13px;
+    border-style: hidden;
+    border-width: 0.001px;
+    background-color: rgba(223, 190, 47, 0.89);
+}
+.productprice{
+    width: 250px;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-right: auto;
+}
+.homerow{
+ display: flex;
+margin-left: 5px;
+margin-right: 5px;
+
+}

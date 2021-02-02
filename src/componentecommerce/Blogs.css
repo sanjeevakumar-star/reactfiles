@@ -1,0 +1,19 @@
+.blogtitle{
+    text-align: center;
+    margin-top: 70px;
+}
+.blogimage{
+    text-align: center;
+    color: black;
+}
+.row{
+    align-items: center;
+   
+}
+
+.bloglink{
+    color: sandybrown;
+}
+.bloglink1{
+    color: rgb(104, 103, 101);
+}

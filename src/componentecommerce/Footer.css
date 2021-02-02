@@ -1,0 +1,64 @@
+.footerarea{
+    background-color: rgb(234, 243, 243);
+}
+
+.footer{
+  
+    background-color: rgb(234, 243, 243);
+    margin-top: 50px;
+    margin-bottom: 0px;
+   }
+   .footerimg{
+       width: 100px;
+       height: 40px;
+       margin-top: 40px;
+   }
+
+
+.footermollapara{
+   color: black;
+    margin: 10px;
+    margin-top: 40px;
+   }
+.color{
+    color: black;
+   
+    text-align: center;
+}
+.signup{
+    background-color:rgba(24, 21, 18, 0.904) ;
+    text-align: center;
+    border-width: 0.001px;
+    
+    width: 200px;
+    height: 40px;
+}
+.footerfooter{
+    background-color:rgba(24, 21, 18, 0.904) ;
+    color:black;
+    margin-top: 0px;
+    height: 400px;
+}
+.footerlist{
+    color:black;
+   
+    list-style: none;
+    margin: 15px;
+    text-align: left;
+   
+}
+.footername{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 80px;
+}
+.footerhr{
+    color:black;
+    background-color: white; 
+    margin-bottom: 10px;
+     
+}
+.footerfac{
+    width: 50px;
+    height: 30px;
+}

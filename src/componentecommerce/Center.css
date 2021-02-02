@@ -1,0 +1,85 @@
+img{
+    margin-top: 5px;
+    border-style: hidden;
+  }
+    
+
+
+.sideimg{
+
+    width: 100%;
+    height: 10%;
+ margin: 5px;
+ display: flex;
+}
+.sideimage1{
+    margin: 5px;
+    width: 217%;
+    height: 180px;
+    display: flexbox;
+}
+
+
+.para{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 10px;
+    display: flexbox;
+   
+}
+.paras{
+    font-size: 20px;
+   
+    margin-right:600px;
+}
+.title{
+    text-align: left;
+    font-size: 60px;
+}
+.titles{
+    text-align: center;
+    font-size: 25px;
+    margin-right:600px;
+
+}
+.buttons{
+    width: 100px;
+    margin-right:400px;
+    font-size: 15px;
+    text-align: left;
+    border-color: rgb(255, 255, 255 ,255);
+    background-color: unset;
+    color: white;
+    margin-bottom: 300px;
+}
+.shoe{
+    margin-right:4px;
+    font-size: 15px;
+    text-align: left;
+    border-color: rgb(255, 255, 255 ,255);
+    background-color: unset;
+    color: white;
+    height: 28px;
+    width: 100px;
+
+}
+.paras1{
+    font-size: 20px;
+    margin-right: 40px;
+}
+.titles1{
+  
+    font-size: 25px;
+  margin-right:-8px;
+
+}
+.button{
+   font-size: 15px;
+    margin-right: 370px;
+    background-color: unset;
+    color: white;
+    border-color: rgb(255, 255, 255 ,255);
+    height: 50px;
+    width:30%; 
+   
+}
