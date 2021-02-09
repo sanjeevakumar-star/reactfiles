@@ -1,7 +1,7 @@
-import React from 'react'
+    import React from 'react'
 import ReactDOM, { render } from 'react-dom';
 
-
+import {Link} from "react-router-dom";
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";  
 import Slider from "react-slick";  
@@ -57,11 +57,11 @@ return(<div className="container">
     </div>
       <div className="col-md-4 ">
       <a href="">
-      <img  className="sideimg" src="https://d-themes.com/react/molla/demo-10/assets/images/home/banners/banner-6.jpg"  />
+    <Link to="/sideimg1">  <img  className="sideimg" src="https://d-themes.com/react/molla/demo-10/assets/images/home/banners/banner-6.jpg"  /></Link>
       <div class="carousel-caption">
        <p className="paras">Clearence</p>
        <h5 className="titles">Shoes40%   </h5>
-       <a href=""> <button className="buttons">Shop now<BsArrowRight/></button></a>
+       <a href="active"> <button className="buttons">Shop now<BsArrowRight/></button></a>
        </div>
       </a>
      
@@ -75,7 +75,7 @@ return(<div className="container">
     <div class="carousel-caption">
        <p className="paras1">Perfect</p>
        <h5 className="titles1">Shoes50%   </h5>
-       <a href=""> <button className="shoe">Shop now<BsArrowRight/></button></a>
+    <Link to="/sideimg2"> <a href="active"> <button className="shoe">Shop now<BsArrowRight/></button></a></Link>  
        </div>
       </a>
    
@@ -91,4 +91,4 @@ return(<div className="container">
                </div>
                </div>)
 }
-export default Center;
+export default Center;   

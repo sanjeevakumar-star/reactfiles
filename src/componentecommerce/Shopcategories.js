@@ -2,6 +2,12 @@ import React from 'react'
 import {BsArrowRight} from 'react-icons/bs';
 function Shopcategories(){
     return(<div className="container">
+         
+<div className="linehr">
+                <hr/>
+            </div>
+      <h2 className="categories">Shop by Categories</h2>
+  
      <div className="Shoppingcategories">
         <div className="row">
             <div className="col-md-4 ">

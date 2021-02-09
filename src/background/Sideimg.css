@@ -1,0 +1,19 @@
+.shoplist{
+    text-align: center;
+  background-color:rgb(253, 253, 249);
+
+}
+.shoptitle{
+    color:rgb(226, 211, 76);
+}
+.dropdowns{
+    width: 400px;
+}
+.showproducts{
+    float :left;
+}
+
+.welshow{
+  justify-content: left;
+
+}

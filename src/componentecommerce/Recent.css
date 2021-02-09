@@ -1,0 +1,7 @@
+.imgproduct{
+width:300px;
+height:200px;
+flex-wrap: wrap;
+display:flex;
+justify-items: center;
+}

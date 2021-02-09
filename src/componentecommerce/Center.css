@@ -1,3 +1,5 @@
+
+
 img{
     margin-top: 5px;
     border-style: hidden;
@@ -11,12 +13,14 @@ img{
     height: 10%;
  margin: 5px;
  display: flex;
+ overflow: hidden;
 }
 .sideimage1{
     margin: 5px;
     width: 217%;
-    height: 180px;
+    height: 150px;
     display: flexbox;
+    overflow: hidden;
 }
 
 
