@@ -22,6 +22,7 @@
     border-style: hidden;
     border-width: 0.001px;
     background-color: rgba(223, 190, 47, 0.89);
+   
 }
 .productprice{
     width: 250px;
@@ -38,4 +39,10 @@ z-index: 1;
 }
 .titlelink{
     color: black;
+}
+.recentimg1{
+    color: black;
+}
+.productprice{
+    color:black;
 }

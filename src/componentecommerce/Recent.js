@@ -26,7 +26,7 @@ function Recent ({image,title,price}){
 
 
 
-    var settings = {
+    {/*  var settings = {
         dots: true,
         infinite: false,
       
@@ -61,7 +61,7 @@ function Recent ({image,title,price}){
         ]
       };
     
-    {/*  const [products]=useState([{
+    const [products]=useState([{
         image:"https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg",
  
         title:"seater-2 sitting",
@@ -156,10 +156,10 @@ return(<div className="container" >
 <div className="productinfo">
 
 <a className="titlelink" href=""><p >{title}</p></a>
-<p className="productprice">
+ <a className="productprice"><p className="productprice">
    <small>$</small>
    <strong>{price}</strong>
-   </p>
+   </p></a> 
  
  {
            Array()

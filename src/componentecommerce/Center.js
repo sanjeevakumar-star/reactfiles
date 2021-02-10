@@ -69,7 +69,7 @@ return(<div className="container">
       <a href="">
    
       <div className="row">
-      <div className="col-md-6 ">
+      <div className="col-md-12 ">
       <a href="">
     <img className="sideimage1"src="https://d-themes.com/react/molla/demo-10/assets/images/home/sliders/slide-1.jpg"/>
     <div class="carousel-caption">

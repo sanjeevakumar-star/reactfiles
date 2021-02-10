@@ -1,6 +1,5 @@
 .container{
     max-width: 1200px;
-   margin-top: 10px;
   
    
 }
@@ -14,7 +13,9 @@
 
 
 .call{
-    margin:20px; 
+    margin-right: flex;
+    margin-left: 5px;
+    margin-left: 450px;
     font-size: 14px;
     color: lightslategrey;
   text-align: center;
@@ -22,28 +23,28 @@
  
 }
 .contact{
-    margin:20px; 
+   margin-left: 5px;
     font-size: 14px;
     color: lightslategrey;
     text-align: center;
     
 }
 .mywish{
-    margin:20px; 
+    margin-left: 5px;
     font-size: 14px;
     color: lightslategrey;
     text-align: center;
     
 }
 .about{
-    margin:20px; 
+    margin-left: 5px;
     font-size: 14px;
     color: lightslategrey;
     text-align: center;
    
 }
 .login{
-    margin:20px; 
+    margin-left: 5px;
     font-size: 14px;
     color: lightslategrey;
     margin-right: 0;

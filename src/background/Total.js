@@ -56,10 +56,5 @@ import { useStateValue } from './StateProvider';
     </form>
     </div>
     </div>);
-
-
-
-
-
-  }
+   }
   export default Total;

@@ -35,9 +35,11 @@ import Trendyimagescss from './background/Trendyimages.css'
 
 import Sideimg from './background/Sideimg';
 import Sideimgcss from './background/Sideimg.css'
-
-
-
+import Recentimage1 from './background/Recentimage.js'
+import Recentimage2 from './background/Recentimage2.js'
+import Recentimage3 from './background/Recentimage.js'
+import Recentimage4 from './background/Recentimage.js'
+ 
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";  
 import Slider from "react-slick";  
@@ -91,26 +93,19 @@ return( <div >
  
 <Switch>
 {/*login page*/}
-<Route path="/login" >
-
-    <Login/>
-</Route>
+    <Route path="/login" >
+      <Login/>
+    </Route>
 
 {/*cart details*/}
  {/*Links for checkout products*/}
-    <Route path="/checkout">
-
-      <Header/> 
-
-<Checkout/>
-
-
-
-</Route>
+     <Route path="/checkout">
+           <Header/> <Checkout/>
+     </Route>
  
 
   
-   <Route path="/sideimg1">
+     <Route path="/sideimg1">
 
    <Header/> 
    <Sideimg/>
@@ -119,6 +114,61 @@ return( <div >
    <Header/> 
    <Sideimg/>
    </Route>
+   <Route path="/products_details" >
+   <Header/> 
+<Recentimage1/>
+   <Footer/>
+   </Route>
+   <Route path="/recentimg1" >
+   <Header/> 
+<Recentimage1
+ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg"
+
+ title="Seater-2"
+ price={199.0}
+ />
+<Footer/>
+</Route>
+   
+<Route path="/recentimg2" >
+
+   <Header/> 
+<Recentimage2 path="/recentimg2"
+
+title="carronade table lamp"
+
+price={2,220.00}
+
+image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-6-2.jpg"
+/>
+   <Footer/>
+   </Route>
+
+
+   <Route path="/recentimg3" >
+   <Header/> 
+<Recentimage3
+title="Block Side Table/Trolly"
+
+price={1,199.00}
+
+image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-2-2.jpg" />
+   <Footer/>
+   </Route>
+
+   <Route path="/recentimg4" >
+   <Header/> 
+<Recentimage4
+
+title="Flow Slim Armchair"
+price={1,299.10}
+ 
+image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-8-2.jpg"/>
+   <Footer/>
+   </Route>
+
+   
+
 
 
    
@@ -131,13 +181,15 @@ return( <div >
    {/*recent slider  */}
 
    <Slider  className="container product1 " {...settings}>
+   <Link to="/recentimg1">
    <Recent
    image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg"
  
    title="seater-2 sitting"
    price={2,111.00}
   
-   />
+   /></Link>
+    <Link to="/recentimg2">
    <Recent
    title="carronade table lamp"
    price={2,220.00}
@@ -145,17 +197,23 @@ return( <div >
    image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-6-2.jpg"
    
   />
+  </Link>
+  <Link to="/recentimg3">
   <Recent
-  title="Block Side Table/Trolly"
+ title="Block Side Table/Trolly"
 
-  price={1,199.00}
-  
-  image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-2-2.jpg"/>
+ price={1,199.00}
+ 
+ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-2-2.jpg"
+  />
+  </Link>
+     <Link to="/recentimg4">
   <Recent
   title="Flow Slim Armchair"
   price={1,299.10}
    
   image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-8-2.jpg"/>
+  </Link>
   <Recent 
   title="buttler stool lader"
   price={1,309.00}
