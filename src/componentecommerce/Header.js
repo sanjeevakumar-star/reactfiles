@@ -35,12 +35,12 @@ import { useStateValue } from '../background/StateProvider';
         <Nav className="mr-auto">
      
       
-      <Nav.Link  className="call" href="#home"> < FaPhoneAlt />CALL : + 01432 896 453</Nav.Link>
-      <Nav.Link   className="contact"href="#home">CONTACT US</Nav.Link>
-      <Nav.Link  className="mywish" href="#home"><FaHeart /> MYWISHLIST(0)</Nav.Link>
-      <Nav.Link  className="about" href="#home">ABOUT</Nav.Link>
+      <Nav.Link  className="call" href="#Call"> < FaPhoneAlt />CALL : + 01432 896 453</Nav.Link>
+      <Nav.Link   className="contact"href="#Contact">CONTACT US</Nav.Link>
+      <Nav.Link  className="mywish" href="#MywishList"><FaHeart /> MYWISHLIST(0)</Nav.Link>
+      <Nav.Link  className="about" href="#About">ABOUT</Nav.Link>
      <Link to="/login">
-      <Nav.Link  className="login" href="#home"><BiLogIn/>LOGIN</Nav.Link>
+      <Nav.Link  className="login" href="#Login"><BiLogIn/>LOGIN</Nav.Link>
       </Link> 
     </Nav>
     </Navbar.Collapse>
@@ -49,16 +49,16 @@ import { useStateValue } from '../background/StateProvider';
    <hr/>
  <b>
   <Navbar bg="" expand="lg">
-  <a href=""> <img  className="navbar-brand logo" src="https://d-themes.com/react/molla/demo-2/assets/images/logo.png"/></a>
+  <a href="http://localhost:3001/"> <img  className="navbar-brand logo" src="https://d-themes.com/react/molla/demo-2/assets/images/logo.png"/></a>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="http://localhost:3001/reactfile">Home</Nav.Link>
-      <Nav.Link href="#link">Shop</Nav.Link>
-      <Nav.Link href="#link">Product</Nav.Link>
-      <Nav.Link href="#link">Pages</Nav.Link>
-      <Nav.Link href="#link">blog</Nav.Link>
-      <Nav.Link href="#link">Element</Nav.Link>
+      <Nav.Link href="http://localhost:3001/react_home_page">Home</Nav.Link>
+      <Nav.Link href="Shop" target="blank">Shop</Nav.Link>
+      <Nav.Link href="/system/:id">Product</Nav.Link>
+      <Nav.Link href="#Pages">Pages</Nav.Link>
+      <Nav.Link href="#Blogs">Blog</Nav.Link>
+      <Nav.Link href="#Elements">Element</Nav.Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />

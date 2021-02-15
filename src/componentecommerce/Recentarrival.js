@@ -7,7 +7,7 @@ import { useStateValue } from '../background/StateProvider';
 
 
  
-  function Recentarrival({image,title,price}){
+  function Recentarrival({image,title,price,id}){
 
 
 
@@ -16,6 +16,7 @@ import { useStateValue } from '../background/StateProvider';
       dispatch({
       type:'ADD_TO_BASKET',
       item:{
+        id:id,
         title: title,
         image: image,
         price: price
@@ -28,10 +29,10 @@ import { useStateValue } from '../background/StateProvider';
 
 
    return(<div className="container" >
-   <div  >
+   <div>
     
-<div className="product">
- <a  href=""><Link to="products_details"><img  className="imagepro"src={image} alt=""/></Link></a> 
+<div className="product" key={id}>
+ <a  href=""><Link to={`/system/${id}`}><img  className="imagepro" src={image}  key={id} alt=""/></Link></a> 
 <div className="productinfo">
 
   <a className="titlelink" href=""><p >{title}</p></a>
@@ -39,8 +40,7 @@ import { useStateValue } from '../background/StateProvider';
       <small>$</small>
       <strong className="recentimg1">{price}</strong>
       </p> </a> 
-    
-    {
+      {
               Array()
               .fill()
              .map(( )=>(
@@ -48,6 +48,7 @@ import { useStateValue } from '../background/StateProvider';
               <p></p>
              ))
           }
+   
  
 </div>
   <button className="addbutton" onClick={addToBasket}  >ADD TO CART <GrCart className="productcart"/></button>

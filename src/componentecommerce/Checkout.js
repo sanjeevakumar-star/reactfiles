@@ -5,8 +5,10 @@ import { useStateValue } from "../background/StateProvider";
 
 import Total from "../background/Total";
 import ProductCart from '../background/ProductCart';
+import Pro from "../background/pro"; 
+import procart from '../background/procart.js'
 
- function Checkout({image,title,price}){
+ function Checkout({id,image,title,price}){
 const [{basket}] = useStateValue();
 
      return(<div className="container">
@@ -38,9 +40,12 @@ const [{basket}] = useStateValue();
                         title={item.title}  
                         image={item.image} 
                         price={item.price}  />
+                       ))}
+                
 
-                        
-                     ))}
+                   
+                   
+                     
           
              </div>
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Recentimagecss from '../background/Recentimage.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import {Dropdown} from 'react-bootstrap'
@@ -10,8 +10,25 @@ import {AiOutlineFacebook ,AiFillTwitterSquare}  from 'react-icons/ai';
 import {FaInstagramSquare,FaThumbsDown ,FaThumbsUp} from 'react-icons/fa';
 import { useStateValue } from '../background/StateProvider';
 import Collapse from 'react-bootstrap/Collapse'
+import {Link} from "react-router-dom"; 
 
-function Recentimage1 ({image,title,price}){
+import pro from "../background/pro.json"; 
+function Recentimage1 ({image,title,price,id}){
+
+ const [ data, setData ] = useState([])
+
+  useEffect(()=>{
+
+
+    const filteredData = pro.filter((d, i) =>{
+      return d.id === "1"
+    })
+
+    setData(filteredData)
+
+    console.log(filteredData, 'sjdghs', pro)
+
+  }, [])
 
     const [open,setOpen] = useState(false);
     const [open1,setOpen1] = useState(false);
@@ -22,6 +39,7 @@ function Recentimage1 ({image,title,price}){
       dispatch({
       type:'ADD_TO_BASKET',
       item:{
+        id:id,
         title: title,
         price:price,
         image: image,
@@ -32,9 +50,17 @@ function Recentimage1 ({image,title,price}){
  
   }
   
+
     
  return(<div className="container">
-        <div className="row">
+
+   
+
+{
+  data.length > 0 ? <div>
+    
+
+    <div className="row">
  <div className="col-md-6">
  <Navbar>
 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -48,24 +74,19 @@ function Recentimage1 ({image,title,price}){
       </Navbar.Collapse>
       </Navbar>
     <a href="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg">
-        <img className="background_image1" src={image} alt="seater-2"/></a>
+    <Link to={`/system/${id}`}>  
+    
+    <img className="background_image1" src={data[0].image}  alt=" "/>
+    </Link></a>
        
-       
-
-
-   
-   <a className="" href="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-1.jpg">
       
+</div>
 
+  <div className="col-md-6 productdetails">
 
-   </a>
-   </div>
-
-   <div className="col-md-6 productdetails">
-
-       <h3>{title}</h3>
+       {/* <h3>{data[0].title}</h3> */}
        <h3>${price}</h3>
-       <p className="sd">Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
+     {/* */} <p className="sd">Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
             Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
             nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
           <div>  <hr/>
@@ -208,7 +229,7 @@ function Recentimage1 ({image,title,price}){
            <a href="" className="feedback"><FaThumbsUp/>Helpful(1)</a>
            <a href=""  className="feedback"><FaThumbsDown/>Unhelpful(0)</a>
 
-
+<hr/>
            <p>  <strong  className="reviews">2. Rajesh.j Good, perfect size</strong></p>
 
                 <p> Sed, molestias, tempore? Ex dolor esse iure hic veniam laborum blanditiis laudantium iste amet. Cum non voluptate eos
@@ -216,12 +237,18 @@ function Recentimage1 ({image,title,price}){
           
                      <a href=""  className="feedback"><FaThumbsUp/>Helpful(1)</a>
                   <a href=""  className="feedback"><FaThumbsDown/>Unhelpful(3)</a>
+                  <hr/>
                </div>
       </Collapse>
 
 </div>
 </div>
    </div>
+  </div> : <div>
+    no product
+  </div>
+}
+
     </div>)  ; 
 
     

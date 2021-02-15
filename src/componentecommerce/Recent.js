@@ -5,15 +5,17 @@ import Slider from "react-slick";
 import Recentcss from  '../componentecommerce/Recent.css'
 import {GrCart} from 'react-icons/gr';
 import { useStateValue } from '../background/StateProvider';
-function Recent ({image,title,price}){
+import {Link} from "react-router-dom";
+function Recent ({image,title,price,id}){
 
    
 
-    const [{basket} ,dispatch]=useStateValue()
+    const [{basket} ,dispatch]=useStateValue();
     const addToBasket= () => {
       dispatch({
       type:'ADD_TO_BASKET',
       item:{
+        id:id,
         title: title,
         image: image,
         price: price
@@ -22,6 +24,74 @@ function Recent ({image,title,price}){
  
  
   }
+  
+return(<div className="container" >
+<div className="container" >
+<Slider>
+<div className="product">
+            <Link to={`/system/${id}`}> <a href=""><img  className="imagepro"src={image} alt=""/></a> </Link>
+<div className="productinfo">
+
+<Link to={`/system/${id}`}><a className="titlelink" href=""><p >{title} </p></a></Link>
+ <a className="productprice"><p className="productprice">
+   <small>$</small>
+   <strong>{price}</strong>
+   </p></a> 
+ 
+ {
+           Array()
+           .fill()
+          .map(( )=>(
+ 
+           <h1></h1>
+          ))
+       }
+
+</div>
+
+
+<button className="addbutton" onClick={addToBasket}  >ADD TO CART <GrCart className="productcart"/></button>
+
+</div>
+
+</Slider>
+
+</div>
+
+
+
+ </div> );
+}          
+export default Recent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -146,46 +216,4 @@ image:"https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
 
 
 */}
-
-
-return(<div className="container" >
-<div className="container" >
-<Slider>
-<div className="product">
-<a href=""><img  className="imagepro"src={image} alt=""/></a> 
-<div className="productinfo">
-
-<a className="titlelink" href=""><p >{title}</p></a>
- <a className="productprice"><p className="productprice">
-   <small>$</small>
-   <strong>{price}</strong>
-   </p></a> 
- 
- {
-           Array()
-           .fill()
-          .map(( )=>(
- 
-           <h1></h1>
-          ))
-       }
-
-</div>
-
-
-<button className="addbutton" onClick={addToBasket}  >ADD TO CART <GrCart className="productcart"/></button>
-
-</div>
-
-</Slider>
-
-</div>
-
-
-
- </div> );
-}          
-export default Recent;
-
-
 
