@@ -12,7 +12,7 @@ import{BiSearch}from 'react-icons/bi';
 import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
 import {Link} from "react-router-dom";
 import { useStateValue } from '../background/StateProvider';
-
+import  css from '../componentecommerce/Header.css';
 
  function Header(){
   const [count, setCount] = useState(0);
@@ -49,13 +49,13 @@ import { useStateValue } from '../background/StateProvider';
    <hr/>
  <b>
   <Navbar bg="" expand="lg">
-  <a href="http://localhost:3001/"> <img  className="navbar-brand logo" src="https://d-themes.com/react/molla/demo-2/assets/images/logo.png"/></a>
+  <a href="http://localhost:3000/"> <img  className="navbar-brand logo" src="https://d-themes.com/react/molla/demo-2/assets/images/logo.png"/></a>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="http://localhost:3001/react_home_page">Home</Nav.Link>
-      <Nav.Link href="Shop" target="blank">Shop</Nav.Link>
-      <Nav.Link href="/system/:id">Product</Nav.Link>
+      <Nav.Link href="http://localhost:3000/">Home</Nav.Link>
+      <Nav.Link href="Shop">Shop</Nav.Link>
+     <Link to="/ProductDetails">  <Nav.Link href="ProductDetails">Product</Nav.Link></Link> 
       <Nav.Link href="#Pages">Pages</Nav.Link>
       <Nav.Link href="#Blogs">Blog</Nav.Link>
       <Nav.Link href="#Elements">Element</Nav.Link>
@@ -63,13 +63,10 @@ import { useStateValue } from '../background/StateProvider';
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
      
-      <Button variant="outline-success">Search<BiSearch/></Button>
+      <Button variant="succes">Search<BiSearch/></Button>
     </Form>
   </Navbar.Collapse>
 
-<Router>
-  <Route path="/checkoput"></Route>
-</Router>
  <Link to="/checkout" className="header_link">
     <div className="header__optionBaskert">
   <GrCart className="cartimg"/>

@@ -2,7 +2,7 @@ import React from "react"
 
 
 import { useStateValue } from "../background/StateProvider";
-
+import Checkoutcss from '../componentecommerce/Checkout';
 import Total from "../background/Total";
 import ProductCart from '../background/ProductCart';
 import Pro from "../background/pro"; 

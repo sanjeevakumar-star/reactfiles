@@ -3,6 +3,7 @@ import{GrDeliver} from 'react-icons/gr'
 
 import {MdFindReplace} from 'react-icons/md'
 import{MdDonutLarge} from 'react-icons/md'
+import  Paymentcss from '../componentecommerce/Payment.css';
 function Payment(){
     return(<div className="container">
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Recentimagecss from '../background/Recentimage.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import {Dropdown} from 'react-bootstrap'
-import {DropdownButton} from 'react-bootstrap';
+//import {DropdownButton} from 'react-bootstrap';
 import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
 import {GrCart} from 'react-icons/gr';
 import {AiOutlineFacebook ,AiFillTwitterSquare}  from 'react-icons/ai';
@@ -12,41 +12,46 @@ import { useStateValue } from '../background/StateProvider';
 import Collapse from 'react-bootstrap/Collapse'
 import {Link} from "react-router-dom"; 
 
-import pro from "../background/pro.json"; 
-function Recentimage1 ({image,title,price,id}){
+  import pro from "../background/pro.json"; 
+
+function Recentimage1 (props, {image,title,price,id, match}){
+ 
 
  const [ data, setData ] = useState([])
 
+ 
+
   useEffect(()=>{
 
-
-    const filteredData = pro.filter((d, i) =>{
-      return d.id === "1"
+ const filteredData = pro.filter((d, i) =>{
+      return d.id === props.match.params.id
     })
 
     setData(filteredData)
 
-    console.log(filteredData, 'sjdghs', pro)
-
-  }, [])
-
-    const [open,setOpen] = useState(false);
-    const [open1,setOpen1] = useState(false);
-    const [open2,setOpen2] = useState(false);
-    const [open3,setOpen3] = useState(false);
-   const [{basket} ,dispatch]=useStateValue()
-    const addToBasket= () => {
-      dispatch({
-      type:'ADD_TO_BASKET',
-      item:{
-        id:id,
-        title: title,
-        price:price,
-        image: image,
-
-    }
-    })
  
+
+   }, [])  
+
+
+
+   const [open,setOpen] = useState(false);
+   const [open1,setOpen1] = useState(false);
+   const [open2,setOpen2] = useState(false);
+   const [open3,setOpen3] = useState(false);
+ 
+   const [{basket} ,dispatch]=useStateValue()
+   const addToBasket= () => {
+     dispatch({
+     type:'ADD_TO_BASKET',
+     item:{
+       id:id,
+       title: title,
+       price:price,
+       image: image,
+ 
+   }
+   })
  
   }
   
@@ -66,7 +71,7 @@ function Recentimage1 ({image,title,price,id}){
 <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="http://localhost:3000">Home</Nav.Link>
       <Nav.Link href="#link">Shop</Nav.Link>
       <Nav.Link href="#link">Default</Nav.Link>
 
@@ -84,8 +89,8 @@ function Recentimage1 ({image,title,price,id}){
 
   <div className="col-md-6 productdetails">
 
-       {/* <h3>{data[0].title}</h3> */}
-       <h3>${price}</h3>
+   <h3>{data[0].title}</h3>  
+        <h3>${data[0].price}</h3> 
      {/* */} <p className="sd">Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
             Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
             nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
@@ -108,7 +113,14 @@ function Recentimage1 ({image,title,price,id}){
 </Dropdown></p> 
 <hr/>
 
-
+{
+           Array()
+           .fill()
+          .map(( )=>(
+ 
+           <h1></h1>
+          ))
+       }
 
  
 
@@ -139,7 +151,7 @@ function Recentimage1 ({image,title,price,id}){
   </button>
   <Collapse in={open}>
         <div id="example-collapse-text">
-           <stromg> <p>1.product information</p></stromg>
+           <strong> <p>1.product information</p></strong>
        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis
             eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec 
             justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.

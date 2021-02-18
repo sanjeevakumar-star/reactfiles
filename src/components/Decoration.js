@@ -1,13 +1,13 @@
- import React, { useState } from 'react'
+import React, { useState } from 'react'
 import { render } from 'react-dom';
 import {GrCart} from 'react-icons/gr';
 
 import {Link} from "react-router-dom";
 import { useStateValue } from '../background/StateProvider';
-import  Recentarrivalcss from '../componentecommerce/Recentarrival.css';
+
 
  
-  function Recentarrival({image,title,price,id}){
+  function Decoration({image,title,price,id}){
 
 
 
@@ -56,5 +56,5 @@ import  Recentarrivalcss from '../componentecommerce/Recentarrival.css';
 </div>
 </div> );
 }
-export default Recentarrival;   
+export default Decoration;   
  

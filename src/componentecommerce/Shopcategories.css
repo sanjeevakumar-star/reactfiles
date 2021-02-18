@@ -1,3 +1,11 @@
+.categories{
+    text-align: center;
+}
+
+.hr{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 .categorieimg1{
     height:555px;
     width:380px;
@@ -24,16 +32,31 @@
 }
 .girlsmakeup{
     font-size: 15px;
-    margin-right: 200px;
+    margin-right: 100px;
     background-color: unset;
     color: white;
     border-color: rgb(255, 255, 255 ,255);
     height: 35px;
     width:38%; 
+    margin-left: 100px;
    
 }
 .arrivals{
     text-align: center;
     margin-top: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonss{
+
+  width: 100px;
+   font-size: 15px;
+    text-align: left;
+    border-color: rgb(255, 255, 255 ,255);
+    background-color: unset;
+    color: white;
+   margin-bottom: 300px;  
+}
+.hi{
+    
+    overflow: hidden;
 }

@@ -100,11 +100,11 @@
     border-width: 0.1px;
     border-color: rgb(204, 190, 63);
     border-bottom: rgb(204, 190, 63);
-   
+    color: white;
     width:29px;
     height: 25px;
     background:var(--maincolor);
-    background-color:rgb(204, 190, 63);
+    background-color:rgb(14, 14, 11);
     color:var(--whitecolor);
     border-radius:50%;
     line-height:10px;

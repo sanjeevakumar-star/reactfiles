@@ -1,6 +1,6 @@
 import React from 'react'
-import {BsArrowDownShort} from 'react-icons/bs'
-
+// import {BsArrowDownShort} from 'react-icons/bs'
+ import  Blogscss from '../componentecommerce/Blogs.css';
 
 function Blogs(){
 

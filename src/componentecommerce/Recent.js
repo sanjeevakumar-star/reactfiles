@@ -6,6 +6,7 @@ import Recentcss from  '../componentecommerce/Recent.css'
 import {GrCart} from 'react-icons/gr';
 import { useStateValue } from '../background/StateProvider';
 import {Link} from "react-router-dom";
+
 function Recent ({image,title,price,id}){
 
    
@@ -24,8 +25,10 @@ function Recent ({image,title,price,id}){
  
  
   }
-  
+
+
 return(<div className="container" >
+
 <div className="container" >
 <Slider>
 <div className="product">

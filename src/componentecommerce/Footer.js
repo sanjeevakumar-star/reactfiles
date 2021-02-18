@@ -1,5 +1,5 @@
 import React from 'react'
-
+import  Footercss from '../componentecommerce/Footer.css';
 import {BsArrowRight} from 'react-icons/bs'
 import{AiFillFacebook} from 'react-icons/ai'
 import{AiFillTwitterSquare}from 'react-icons/ai'

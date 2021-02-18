@@ -2,8 +2,9 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";  
 import "slick-carousel/slick/slick-theme.css";  
 import Slider from "react-slick";  
+import {Link} from "react-router-dom";
 
- 
+import  Imagescss from '../componentecommerce/Images.css';
  
 function Images(){
     var settings = {
@@ -67,16 +68,19 @@ function Images(){
         </div>
 
         <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
          <h1 className="title1"> Trendy Products</h1>
         
         </div>
         <div className="list">
-
-  <a className="lists" href="default">All</a>
- <a className="list1" href="">FURNITUE</a>
-  <a className="list1" href="">DECARATION</a>
-  <a className="list1" href="">LIGHTING</a>
-
+<div className="newlinks">
+              <a className="lists" href="">All</a>
+     <Link to="/furniture"> <a className="list1" href=""> FURNITUE</a>  </Link>
+     <Link to="/decoration"><a className="list1" href="">DECARATION</a></Link>
+     <Link to="/lighting"> <a className="list1" href="">LIGHTING</a></Link>
+     </div></div>
+     </div>
         </div>
 
 
