@@ -28,7 +28,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.2.1",
+    "tailwindcss": "^2.0.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

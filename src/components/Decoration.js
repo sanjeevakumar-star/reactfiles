@@ -40,14 +40,7 @@ import { useStateValue } from '../background/StateProvider';
       <small>$</small>
       <strong className="recentimg1">{price}</strong>
       </p> </a> 
-      {
-              Array()
-              .fill()
-             .map(( )=>(
     
-              <p></p>
-             ))
-          }
    
  
 </div>

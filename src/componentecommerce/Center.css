@@ -11,12 +11,12 @@ img{
 
     width: 100%;
     height: 10%;
- margin: 5px;
+ /* margin: 5px; */
  display: flex;
  overflow: hidden;
 }
 .sideimage1{
-    margin: 5px;
+    /* margin: 5px; */
     width: 100%; 
      height: 50%; 
     display: flexbox;

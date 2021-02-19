@@ -7,8 +7,8 @@ function Shopcategories(){
     return(<div className="container hi">
          
 <div className="linehr">
-                <hr className="hr"/>
-            </div>
+            <hr className="hr"/>
+   </div>
       <h2 className="categories">Shop by Categories</h2>
   
      <div className="Shoppingcategories">
@@ -30,14 +30,14 @@ function Shopcategories(){
        <Link to="/ProductType">  <a href=""> <button className="buttonss">Shop now<BsArrowRight/></button></a></Link>
        </div></a>
            
-           <div className="">
+       
       <a href=" ">     <img  className="Categorieimg4" src="https://d-themes.com/react/molla/demo-7/assets/images/blog/grid/3cols/post-2.jpg"/>
             <div class="carousel-caption">
        
        <p className="makeups">Fashions   </p>
        <Link to="/ProductType">  <a href=""> <button className="girlsmakeup">Shop now<BsArrowRight/></button></a></Link>
-       </div></a>
-       </div>
+     </div> </a>
+       
            
             </div>
             <div className="col-md-4 ">
@@ -53,19 +53,21 @@ function Shopcategories(){
         </div>
          
         </div>
-        <div>
+         <div className="container"> 
+         <div className="row ">
+            <div className= "col-md-12">
         <h3 className="arrivals"><b>Recent Arrivals</b></h3>
-        <div className="list  ">
-          <div className="">
-            <div className= "">
+        <div className="list ">
+        
 
 <a className="lists" href="">All</a>
 <a className="list1" href="">FURNITUE</a>
 <a className="list1" href="">DECARATION</a>
-<a className="list1" href="">LIGHTING</a>
+{/* <a className="list1" href="">LIGHTING</a> */}
 </div></div>
       </div>
         </div>
+       
         </div>);
 
 }

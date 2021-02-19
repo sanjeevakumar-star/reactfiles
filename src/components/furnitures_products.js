@@ -13,7 +13,7 @@ function FurnituresProducts(){
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg"
  
  title="seater-2 sitting"
- price={2,111.00}
+ price={111.00}
 
 />
 </div>
@@ -23,7 +23,7 @@ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
  id="3"
 title="Block Side Table/Trolly"
 
-price={1,199.00}
+price={199.00}
 
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-2-2.jpg"
 />
@@ -33,7 +33,7 @@ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
 < FurnitureProducts
  id="4"
 title="Flow Slim Armchair"
-price={1,299.10}
+price={199.10}
  
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-8-2.jpg"
 
@@ -45,7 +45,7 @@ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
 < FurnitureProducts
  id="5"
 title="buttler stool lader"
-price={1,309.00}
+price={309.00}
 
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-3-2.jpg" 
 
@@ -56,8 +56,7 @@ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
 <FurnitureProducts
  id="8"
 title="Garden chair"
-price={2,111.00}
-
+price={299}
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-10-2.jpg"
 
 />

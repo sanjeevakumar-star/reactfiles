@@ -34,7 +34,7 @@ function App(){
 
    <div>
    <Header/> 
-<Route  path="/" component={data} exact  />
+<Route exact path="/" component={data}   />
 
  
 <Route path="/login" component={Login} />
@@ -45,15 +45,16 @@ function App(){
 
 <Route path="/ProductDetails" component={ProductDescription} />
 
- {/* <Route path="/ProductType" component={Producttypes}  />     */}
-   <Route path="/ProductType" component={ReactTabs} />  
+<Route path="/ProductType" component={ReactTabs} />  
 
 <Route path="/productstype/:catagory" component={Furniture}/>
 
 <Route path="/furniture" component={FurnituresProducts}  /> 
 
 <Route path="/decoration" component={DecorationProducts}  />
+
 <Route path="/lighting" component={Lightings}  />
+
   <Footer/>
  
 </div>
