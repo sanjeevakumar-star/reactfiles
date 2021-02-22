@@ -35,7 +35,7 @@ return(<div className="container">
        <div class="carousel-caption">
        <p className="para">News and inspiration</p>
        <h1 className="title"> New Arrivals</h1>
-       <Link to="/ProductType"> <a href=""> <button className="button">Shop now<BsArrowRight/></button></a></Link>Link
+       <Link to="/ProductType"> <a href=""> <button className="button">Shop now<BsArrowRight/></button></a></Link>
      </div>   
     </div>
 

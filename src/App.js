@@ -1,10 +1,4 @@
 import React,{useState, useEffect} from 'react'
-//import Products from './componentecommerce/Products';
-//import  Productscss from './componentecommerce/Products.css';
-//import Trendyimages from './background/Trendyimges'
- //import Trendyimagescss from './background/Trendyimages.css
- //import subtotalcss from './componentecommerce/Subtotal.css';
- //import Sideimg from './background/Sideimg'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import {BrowserRouter as  Router,Switch,Route} from "react-router-dom"
 import Checkout from './componentecommerce/Checkout';
@@ -13,16 +7,14 @@ import Recentimage1 from './background/Recentimage.js';
 import data from './componentecommerce/data'
 import Header from './componentecommerce/Header';
 import Footer from './componentecommerce/Footer';
-// import ProductDetails from './background/ProductDetails';
 import ProductDescription from './background/ProductDescription';
 import Producttypes from './background/Producttypes';
 import Furniture from './background/Furniture';
 import Lightings from './components/Lightings';
-
 import DecorationProducts from './components/DecorationProducts';
  import ReactTabs from './background/ReactTabs';
  import FurnituresProducts from './components/furnitures_products';
-// import ReactTabs from './background/ReactTabs'
+
 function App(){
 
 
@@ -56,12 +48,14 @@ function App(){
 <Route path="/lighting" component={Lightings}  />
 
   <Footer/>
+
+ 
+  
  
 </div>
   </Switch>
    </Router>
 
-    
   </div>);
 }
 export default App;
