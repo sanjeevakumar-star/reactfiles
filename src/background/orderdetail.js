@@ -7,7 +7,7 @@ import { useStateValue } from './StateProvider';
 import { useState } from 'react';
 
 
-  function Total(){
+  function Totals(){
 
     const getCartTotal=(basket)=>
     basket?.reduce((amount,item)  =>item.price+amount,0);
@@ -41,21 +41,25 @@ import { useState } from 'react';
 <hr/>
      <p>Shopping:</p>
      <input type="radio" id="male" name="gender" value="male"/>
-  <label for="male">Free Shipping</label><br/>
+  <label for="male">Direct Bank transfer</label><br/>
   <input type="radio" id="female" name="gender" value="female"/>
-  <label for="female">Standard</label><br/>
+  <label for="female">Check Payments</label><br/>
   <input type="radio" id="female" name="gender" value="female"/>
-  <label for="female">Express</label><br/>
-     <p>Estimate for your country </p>
+  <label for="female">Cash on  Delivery</label><br/>
+  <input type="radio" id="female" name="gender" value="female"/>
+  <label for="female">Pay Pal</label><br/>
+  <input type="radio" id="female" name="gender" value="female"/>
+  <label for="female">Credit Card(Stripe)</label><br/>
+    
      <div>
      <a href=" " className="address">change address</a>
      <hr/>
      </div>
-     <Link to="/proceedtocheckout"><button className="totalcheckout">PROCEED TO CHECKOUT</button></Link>
+    <button className="totalcheckout">PLACE ORDER</button>
     <hr/>
-    <button className="totalcheckout">COUNTINUE SHOPPING</button>
+   
     </form>
     </div>
     </div>);
    }
-  export default Total;
+  export default Totals;

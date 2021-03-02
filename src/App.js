@@ -12,8 +12,9 @@ import Producttypes from './background/Producttypes';
 import Furniture from './background/Furniture';
 import Lightings from './components/Lightings';
 import DecorationProducts from './components/DecorationProducts';
- import ReactTabs from './background/ReactTabs';
- import FurnituresProducts from './components/furnitures_products';
+import ReactTabs from './background/ReactTabs';
+import FurnituresProducts from './components/furnitures_products';
+import Checkoutshop from './components/checkoutshop';
 
 function App(){
 
@@ -22,13 +23,14 @@ function App(){
     
  <Router>
  <Switch>
- 
-
-   <div>
+  <div>
+   
    <Header/> 
+ 
+   
 <Route exact path="/" component={data}   />
 
- 
+
 <Route path="/login" component={Login} />
 
 <Route path="/checkout" component={Checkout} />
@@ -46,6 +48,8 @@ function App(){
 <Route path="/decoration" component={DecorationProducts}  />
 
 <Route path="/lighting" component={Lightings}  />
+
+<Route path="/proceedtocheckout"  component={Checkoutshop} />
 
   <Footer/>
 
