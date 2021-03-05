@@ -53,7 +53,7 @@ return(<div className="container">
     </div>
       <div className="col-md-4 ">
       <a href="">
-     <img  className="sideimg" src="https://d-themes.com/react/molla/demo-10/assets/images/home/banners/banner-6.jpg"  />
+     <img  className="sideimg" src="http://www.yerwallet.com.s3-website-us-east-1.amazonaws.com/assets/images/slider/slide-2.jpg "/>
       <div class="carousel-caption">
        <p className="paras">Clearence</p>
        <h5 className="titles">Shoes40%   </h5>

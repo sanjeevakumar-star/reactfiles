@@ -1,4 +1,4 @@
-import React from "react";
+{/*import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
@@ -49,4 +49,4 @@ const Trendyimages=()=>{
 
  </div>)
 }
-export default Trendyimages;
+export default Trendyimages;  */}

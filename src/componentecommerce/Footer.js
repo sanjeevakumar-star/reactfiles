@@ -7,23 +7,25 @@ import {FaInstagramSquare}from 'react-icons/fa'
 
 import {FaTelegram}from 'react-icons/fa'
 function Footer(){
-    return(<div className="footerarea">
+    return(<div >
        
-            <div className="footer">
-          
-  <img src=""/>
-  
+       <div className="footer">
       <div className="container">
           <div className="color">
+              <div className="row">
+                  <div className="col-md-8">
     <h1  className="color">sign up& get 10% off </h1>
-    <p className="color">Molla present as best interior design</p>
+    <p className="color ">Molla present as best interior design</p>
+    </div>
+ <div className="col-md-4">
     <a href="" ><button  className="signup"> Sign up<BsArrowRight/></button></a>
     </div>
-
+    </div>
+    </div>
+    </div>
 </div>
-</div>
 
- 
+ <div className="footerarea">
  
       <div className="container">
 <div className="row">
@@ -77,6 +79,7 @@ function Footer(){
             <a href=""><li className="footerlist">View cart</li></a>
             <a href=""><li className="footerlist">My wishlist</li></a>
             <a href=""><li className="footerlist">Track My order</li></a>
+            <a href=""><li className="footerlist">Contact</li></a>
             <a href=""><li className="footerlist">Help</li></a>
             
             </ul>
@@ -84,12 +87,12 @@ function Footer(){
 </div>
 
 <hr className="footerhr"/>
-<p>Copyright © 2021 Molla Store. All Rights Reserved.
-
+<p className="footername">Copyright © 2021 Molla Store. All Rights Reserved.
+ 
 </p>
   </div>
  
-   
+  </div>
 
    
    

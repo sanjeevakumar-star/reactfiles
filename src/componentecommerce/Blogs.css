@@ -2,6 +2,11 @@
     text-align: center;
     margin-top: 70px;
 }
+.blogimage1{
+    width: 100%;
+    height: 100%;
+    
+}
 .blogimage{
     text-align: center;
     color: black;
@@ -15,8 +20,12 @@
 }
 
 .bloglink{
-    color: sandybrown;
+    color: rgb(10, 10, 9);
 }
 .bloglink1{
     color: rgb(104, 103, 101);
 } 
+.bloglinks{
+    cursor: pointer;
+    color:saddlebrown;
+}

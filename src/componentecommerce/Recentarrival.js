@@ -4,7 +4,7 @@ import {GrCart} from 'react-icons/gr';
 
 import {Link} from "react-router-dom";
 import { useStateValue } from '../background/StateProvider';
-import  Recentarrivalcss from '../componentecommerce/Recentarrival.css';
+ import  Recentarrivalcss from '../componentecommerce/Recentarrival.css';
 
  
   function Recentarrival({image,title,price,id}){
@@ -29,27 +29,19 @@ import  Recentarrivalcss from '../componentecommerce/Recentarrival.css';
 
 
    return(<div className="container" >
-   <div>
+   <div className="change">
     
 <div className="product" key={id}>
- <a  href=""><Link to={`/system/${id}`}><img  className="imagepro" src={image}  key={id} alt=""/></Link></a> 
+  <Link to={`/system/${id}`}><img  className="imagepro" src={image}  key={id} alt=""/></Link>
 <div className="productinfo">
+<p className="producttype">Furnitures</p>
 
   <a className="titlelink" href=""><p >{title}</p></a>
   <a className="productprice">  <p className="productprice">
-      <small>$</small>
-      <strong className="recentimg1">{price}</strong>
+       <small >$</small>
+       <strong className="recentimg1">{price} </strong> 
       </p> </a> 
-      {
-              Array()
-              .fill()
-             .map(( )=>(
-    
-              <p></p>
-             ))
-          }
-   
- 
+     
 </div>
   <button className="addbutton" onClick={addToBasket}  >ADD TO CART <GrCart className="productcart"/></button>
 </div>

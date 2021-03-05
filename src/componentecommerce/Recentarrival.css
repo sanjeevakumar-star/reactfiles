@@ -6,22 +6,26 @@
    justify-content:flex-end;
   }
 .imagepro{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+     width: 100%;
+    height: 100%;
+    display: flex;
+     object-fit: contain; 
   
 }
+
+
 .addbutton{
-    width: 200px;
+    width: 100%;
     height: 30px;
   
-  
-    color: black;
+    font-family:'Times New Roman', Times, serif;
+    color: black; 
+   
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     border-style: hidden;
     border-width: 0.001px;
-    background-color: rgba(223, 190, 47, 0.89);
+    background-color: unset;
    
 }
 .productprice{
@@ -39,10 +43,38 @@ z-index: 1;
 }
 .titlelink{
     color: black;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    /* text-align: center; */
 }
 .recentimg1{
     color: black;
+    align-items: center;
+    /* text-align: center; */
+   
 }
 .productprice{
     color:black;
 }
+
+
+.producttype{
+    color: rgb(123, 117, 117);
+    font-family:'Times New Roman', Times, serif;
+    /* text-align: center; */
+    
+}
+.addbutton:hover{
+    background-color:rgba(235, 221, 33, 0.81);
+  transform: scale(1,1);
+ cursor: pointer;
+ color: black;
+ 
+}
+ .imagepro:hover{
+   
+    transform: scale(1.2,1.2);
+   cursor: pointer;
+ 
+   
+} 

@@ -11,14 +11,14 @@ return(
 <div className="homerow">
 <div className="row">
  
-     <div className="col-lg-3">
+     <div className="col-lg-3 ">
 {/* recent arrival class*/}
 
  <Recentarrival 
  id="1"
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg"
  
- title="seater-2 sitting"
+ title="Seater-2 sitting"
  price={2,111.00}
 
 />
@@ -27,7 +27,7 @@ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
 
 < Recentarrival 
  id="2"
-title="carronade table lamp"
+title="Carronade table lamp"
 price={2,220.00}
 
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-6-2.jpg"
@@ -62,7 +62,7 @@ image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/produ
 
 < Recentarrival
  id="5"
-title="buttler stool lader"
+title="Buttler stool lader"
 price={1,309.00}
 
 image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-3-2.jpg" 

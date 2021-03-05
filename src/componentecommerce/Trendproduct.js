@@ -51,14 +51,14 @@ return (<div>
     id="1"
     image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg"
   
-    title="seater-2 sitting"
+    title="Seater-2 sitting"
     price={111.00}
    
     />
     
     <Recent
     id="2"
-    title="carronade table lamp"
+    title="Sarronade table lamp"
     price={220.00}
     
     image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-6-2.jpg"
@@ -92,7 +92,7 @@ return (<div>
    />
    <Recent
    id="6"
-   title="buttler stool lader"
+   title="Buttler stool lader"
    price={109.00}
    
    image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-3-2.jpg" 
@@ -145,45 +145,8 @@ export default Trendproduct;
 
 
 
-{/* <Recentimage1  
-        id="1"
-         image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg"
-       
-         title="seater-2 sitting"
-         price={2,111.00} />  */}
-         
-
         
          
         
 
 
-
-    {/*     <Recentimage1
-         
-         id="2"
-   title="carronade table lamp"
-   price={2,220.00}
-   
-   image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-6-2.jpg"
-   
-         />
-
-<Recentimage1
-         
-         id="3"
-         title="Block Side Table/Trolly"
-        
-         price={1,199.00}
-         
-         image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-2-2.jpg"
-   
-         />
-           
-  <Recentimage1
-  id="4"
-  title="Flow Slim Armchair"
-  price={1,299.10}
-   
-  image="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-8-2.jpg"/>
-   */}

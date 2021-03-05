@@ -7,7 +7,7 @@ import { useStateValue } from './StateProvider';
 import { useState } from 'react';
 
 
-  function Totals(){
+  function Orderdetail(){
 
     const getCartTotal=(basket)=>
     basket?.reduce((amount,item)  =>item.price+amount,0);
@@ -62,4 +62,4 @@ import { useState } from 'react';
     </div>
     </div>);
    }
-  export default Totals;
+  export default Orderdetail;

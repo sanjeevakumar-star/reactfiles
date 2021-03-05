@@ -14,7 +14,7 @@ function Shopcategories(){
      <div className="Shoppingcategories">
         <div className="row">
             <div className="col-md-4 ">
-            <a href="">   <img className="categorieimg1" src="https://d-themes.com/react/molla/demo-9/assets/images/home/sliders/slide-1.jpg" alt="shoppping categories"/>
+            <a href=""><img className="categorieimg1" src="https://d-themes.com/react/molla/demo-9/assets/images/home/sliders/slide-1.jpg" alt="shoppping categories"/>
               <div class="carousel-caption">
      
        <p className="titless">Womens sportswear 2021  </p>
@@ -27,7 +27,7 @@ function Shopcategories(){
             <div class="carousel-caption">
       
        <p className="titless">Shoes for Womens  </p>
-       <Link to="/ProductType">  <a href=""> <button className="buttonss">Shop now<BsArrowRight/></button></a></Link>
+       <Link to="/ProductType">  <a href=""> <button className="buttons1">Shop now<BsArrowRight/></button></a></Link>
        </div></a>
            
        

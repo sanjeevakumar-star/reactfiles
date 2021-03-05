@@ -1,34 +1,36 @@
+export const initialState = {
+  basket: [],
+};
 
-export const initialState={
-    basket:[],
-}
-
-const reducer =(state,action ) => {
-    console.log(action);
-    switch(action .type){
+const reducer = (state, action) => {
+  // console.log(action);
+  switch (action.type) {
     case "ADD_TO_BASKET":
-
-    return{
+      return {
         ...state,
-        basket : [...state.basket, action.item]
-    }
+        basket: [...state.basket, action.item],
+      };
 
     case "REMOVE_FROM_CART":
+    //   let newcart = [state.basket];
+    //   const index = state.basket.findIndex(
+    //     (basketitem) => basketitem.title === action.title
+    //   );
+
+    //   if (index >= 0) {
+    //     newcart.splice(index, 1);
+    //   } else {
+    //     console.log("there were errors while removing the product from cart");
+    //   }
+
+    //   return { ...state, basket: newcart };
+
+      const newBasket = state.basket.filter(item => item.title !== action.title)
       
-            let newcart=[...state.basket]
-            const index =state.basket.findIndex((basketitem) =>basketitem.title === action.title)
-       
+      return {basket: newBasket}
 
-        if(index >=0){
-
-            newcart.splice (index,1)
-       }
-
-      else{
-          console.log("there were errors while removing the product from cart")
-      } 
-
-      return {...state,basket: newcart}
-    }
-}
+      default: 
+        return state
+  }
+};
 export default reducer;

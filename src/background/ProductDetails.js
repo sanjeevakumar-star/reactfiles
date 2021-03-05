@@ -10,7 +10,7 @@ import {AiOutlineFacebook ,AiFillTwitterSquare}  from 'react-icons/ai';
 import {FaInstagramSquare,FaThumbsDown ,FaThumbsUp} from 'react-icons/fa';
 import { useStateValue } from '../background/StateProvider';
 import Collapse from 'react-bootstrap/Collapse'
-import {Link} from "react-router-dom"; 
+// import {Link} from "react-router-dom"; 
 
 import pro from "../background/pro.json"; 
  import ProductDescription from "../background/ProductDescription.js";
@@ -55,14 +55,14 @@ return(<div className="container">
    </a>
       
      
-{
+{/* {
           Array()
           .fill()
          .map(( )=>(
 
           <h1></h1>
          ))
-      }
+      } */}
 
 </div>
 

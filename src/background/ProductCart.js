@@ -28,7 +28,7 @@ return(<div className="container row" >
  
       </p>
     
-    {
+    {/* {
               Array()
               .fill()
              .map(()=>(
@@ -38,7 +38,7 @@ return(<div className="container row" >
           }
  
 
-  
+   */}
 
 <button className="remove_button" onClick={removeitem}  >REMOVE TO CART </button>
 </div>
