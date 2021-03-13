@@ -5,8 +5,8 @@ import { useStateValue } from "../background/StateProvider";
 import Checkoutcss from '../componentecommerce/Checkout';
 import Total from "../background/Total";
 import ProductCart from '../background/ProductCart';
-import Pro from "../background/pro"; 
-import procart from '../background/procart.js'
+// import Pro from "../background/pro"; 
+
 
  function Checkout({id,image,title,price}){
 const [{basket}] = useStateValue();
@@ -34,20 +34,14 @@ const [{basket}] = useStateValue();
              <h2 className="shoppingbaskettitle">Items in  the shoopping Basket</h2>
                  {
                      basket.map (item =>(  
-                       
-                        
+                   
                         <ProductCart  
+                        id={item.id}
                         title={item.title}  
                         image={item.image} 
                         price={item.price}  />
                        ))}
-                
-
-                   
-                   
-                     
-          
-             </div>
+            </div>
 
                     )
                 
@@ -64,8 +58,6 @@ const [{basket}] = useStateValue();
        ) }         
 
 </div>
-
-  
-      </div>);
+    </div>);
  }
  export default Checkout;

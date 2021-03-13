@@ -14,38 +14,38 @@ function Shopcategories(){
      <div className="Shoppingcategories">
         <div className="row">
             <div className="col-md-4 ">
-            <a href=""><img className="categorieimg1" src="https://d-themes.com/react/molla/demo-9/assets/images/home/sliders/slide-1.jpg" alt="shoppping categories"/>
+            <a href="/"><img className="categorieimg1" src="https://d-themes.com/react/molla/demo-9/assets/images/home/sliders/slide-1.jpg" alt="shoppping categories"/>
               <div class="carousel-caption">
      
        <p className="titless">Womens sportswear 2021  </p>
-       <Link to="/ProductType"> <a href=""> <button className="buttons">Shop now<BsArrowRight/></button></a></Link>
+       <Link to="/ProductType"> <a href="/"> <button className="buttons">Shop now<BsArrowRight/></button></a></Link>
        </div></a>
            
             </div>
             <div className="col-md-4">
-            <a href=""> <img className=" categorieimg2 " src="https://d-themes.com/react/molla/demo-7/assets/images/home/posts/post-3.jpg" alt="shooping categories"/>
+            <a href="/"> <img className=" categorieimg2 " src="https://d-themes.com/react/molla/demo-7/assets/images/home/posts/post-3.jpg" alt="shooping categories"/>
             <div class="carousel-caption">
       
        <p className="titless">Shoes for Womens  </p>
-       <Link to="/ProductType">  <a href=""> <button className="buttons1">Shop now<BsArrowRight/></button></a></Link>
+       <Link to="/ProductType">  <a href="/"> <button className="buttons1">Shop now<BsArrowRight/></button></a></Link>
        </div></a>
            
        
-      <a href=" ">     <img  className="Categorieimg4" src="https://d-themes.com/react/molla/demo-7/assets/images/blog/grid/3cols/post-2.jpg"/>
+      <a href="/">     <img className="Categorieimg4" src="https://d-themes.com/react/molla/demo-7/assets/images/blog/grid/3cols/post-2.jpg" alt="shooping catagories"/>
             <div class="carousel-caption">
        
        <p className="makeups">Fashions   </p>
-       <Link to="/ProductType">  <a href=""> <button className="girlsmakeup">Shop now<BsArrowRight/></button></a></Link>
+       <Link to="/ProductType">  <a href="/"> <button className="girlsmakeup">Shop now<BsArrowRight/></button></a></Link>
      </div> </a>
        
            
             </div>
             <div className="col-md-4 ">
-           <a href="">    <img  className="categorieimg3" src=" https://d-themes.com/react/molla/demo-9/assets/images/home/sliders/slide-2.jpg" alt="shopping categories"/>
+           <a href="/">    <img  className="categorieimg3" src=" https://d-themes.com/react/molla/demo-9/assets/images/home/sliders/slide-2.jpg" alt="shopping categories"/>
          <div class="carousel-caption">
        
        <p className="titless">Mens jacket  </p>
-       <Link to="/Shopping"> <a href=""> <button className="buttons">Shop now<BsArrowRight/></button></a></Link>
+       <Link to="/Shopping"> <a href="/"> <button className="buttons">Shop now<BsArrowRight/></button></a></Link>
        </div></a>
           
             </div>
@@ -60,9 +60,9 @@ function Shopcategories(){
         <div className="list ">
         
 
-<a className="lists" href="">All</a>
-<a className="list1" href="">FURNITUE</a>
-<a className="list1" href="">DECARATION</a>
+<a className="lists" href="/">All</a>
+<a className="list1" href="/">FURNITUE</a>
+<a className="list1" href="/">DECARATION</a>
 {/* <a className="list1" href="">LIGHTING</a> */}
 </div></div>
       </div>

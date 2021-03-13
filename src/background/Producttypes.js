@@ -20,7 +20,7 @@ function Producttypes(props,{image,title,price,id,catagory}){
      useEffect(()=>{
   
    const filteredData = pro.filter((datas, i) =>{
-        // return datas.catagory === props.match.params.catagory      
+        //  return datas.catagory === props.match.params.catagory      
      })
   
        setData(filteredData)
@@ -91,7 +91,7 @@ function Producttypes(props,{image,title,price,id,catagory}){
            Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
            nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
          <div>  <hr/>
-            <p >color : <ul><a href=""> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
+            <p >color : <ul><a href="/"> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
                    </div>  
             <div>      
           <hr/>
@@ -117,7 +117,7 @@ function Producttypes(props,{image,title,price,id,catagory}){
               <button  className="addbutton" onClick={addToBasket} >ADD TO CART<GrCart className="productcart"/></button></div>
             <div>
 
-              <a href=""> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
+              <a href="/"> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
              
             </div>
            

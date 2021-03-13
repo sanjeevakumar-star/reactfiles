@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react"
+import React, { useState,  } from "react"
 import Recentimagecss from '../background/Recentimage.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import {Dropdown} from 'react-bootstrap'
 //import {DropdownButton} from 'react-bootstrap';
-import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
+import {Navbar,Nav} from "react-bootstrap"
 import {GrCart} from 'react-icons/gr';
 import {AiOutlineFacebook ,AiFillTwitterSquare}  from 'react-icons/ai';
 
 import {FaInstagramSquare,FaThumbsDown ,FaThumbsUp} from 'react-icons/fa';
 import { useStateValue } from '../background/StateProvider';
-import Collapse from 'react-bootstrap/Collapse'
+// import Collapse from 'react-bootstrap/Collapse'
 // import {Link} from "react-router-dom"; 
 
-import pro from "../background/pro.json"; 
- import ProductDescription from "../background/ProductDescription.js";
+// import pro from "../background/pro.json"; 
+//  import ProductDescription from "../background/ProductDescription.js";
 
 function ProductDetails ({id,image,title,price}){
-  const [open,setOpen] = useState(false);
-  const [open1,setOpen1] = useState(false);
-  const [open2,setOpen2] = useState(false);
-  const [open3,setOpen3] = useState(false);
+  // const [open,setOpen] = useState(false);
+  // const [open1,setOpen1] = useState(false);
+  // const [open2,setOpen2] = useState(false);
+  // const [open3,setOpen3] = useState(false);
 
   const [{basket} ,dispatch]=useStateValue()
   const addToBasket= () => {
@@ -54,15 +54,7 @@ return(<div className="container">
   <img className="background_image1_image" src={image}  alt={title} />
    </a>
       
-     
-{/* {
-          Array()
-          .fill()
-         .map(( )=>(
 
-          <h1></h1>
-         ))
-      } */}
 
 </div>
 
@@ -74,7 +66,7 @@ return(<div className="container">
            Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
            nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
          <div>  <hr/>
-            <p >color : <ul><a href=""> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
+            <p >color : <ul><a href="/"> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
                    </div>  
             <div>      
           <hr/>
@@ -100,14 +92,14 @@ return(<div className="container">
               <button onClick={addToBasket} className="addbutton">ADD TO CART <GrCart className="productcart"/></button></div>
             <div>
 
-              <a href=""> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
+              <a href="/"> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
             </div>
 </div>
 
   </div>
 
 <hr/>
-
+{/*
 <div className="collapsible">
 <div class="row ">
 <div className="col-sm-12">
@@ -208,8 +200,8 @@ return(<div className="container">
            eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec 
            justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
             Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.</p>
-          <a href="" className="feedback"><FaThumbsUp/>Helpful(1)</a>
-          <a href=""  className="feedback"><FaThumbsDown/>Unhelpful(0)</a>
+          <a href="/" className="feedback"><FaThumbsUp/>Helpful(1)</a>
+          <a href="/"  className="feedback"><FaThumbsDown/>Unhelpful(0)</a>
 
 <hr/>
           <p>  <strong  className="reviews">2. Rajesh.j Good, perfect size</strong></p>
@@ -217,15 +209,15 @@ return(<div className="container">
                <p> Sed, molestias, tempore? Ex dolor esse iure hic veniam laborum blanditiis laudantium iste amet. Cum non voluptate eos
                     enim, ab cumque nam, modi, quas iure illum repellendus, blanditiis perspiciatis beatae!</p> 
          
-                    <a href=""  className="feedback"><FaThumbsUp/>Helpful(1)</a>
-                 <a href=""  className="feedback"><FaThumbsDown/>Unhelpful(3)</a>
+                    <a href="/"  className="feedback"><FaThumbsUp/>Helpful(1)</a>
+                 <a href="/"  className="feedback"><FaThumbsDown/>Unhelpful(3)</a>
                  <hr/>
               </div>
      </Collapse>
 
 </div>
 </div>
-  </div>
+  </div>  */}
  <hr/>
 
    </div>); 

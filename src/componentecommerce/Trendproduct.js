@@ -43,9 +43,15 @@ function Trendproduct(props){
          }
        ]
      };
-return (<div>
-    <Slider  className="container product1 " {...settings} >
+return (<div className="container">
+  <div className="row">
+
+<div className="col-md-12">
+
+     <Slider  className="container product1 "   {...settings} > 
   
+
+    
     <Recent
     
     id="1"
@@ -112,8 +118,10 @@ return (<div>
    />
  
  
+     </Slider> 
+    </div>
+  </div>
  
-    </Slider>
     </div>);
       }
 export default Trendproduct;

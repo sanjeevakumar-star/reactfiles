@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react"
 import Recentimagecss from '../background/Recentimage.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import {Dropdown} from 'react-bootstrap'
-//import {DropdownButton} from 'react-bootstrap';
-import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
+
+import {Navbar,Nav, } from "react-bootstrap"
 import {GrCart} from 'react-icons/gr';
 import {AiOutlineFacebook ,AiFillTwitterSquare}  from 'react-icons/ai';
 
 import {FaInstagramSquare,FaThumbsDown ,FaThumbsUp} from 'react-icons/fa';
 import { useStateValue } from '../background/StateProvider';
-import Collapse from 'react-bootstrap/Collapse'
+// import Collapse from 'react-bootstrap/Collapse'
 import {Link} from "react-router-dom"; 
 
   import pro from "../background/pro.json"; 
@@ -35,25 +35,25 @@ function Recentimage1 (props, {image,title,price,id, match}){
 
 
 
-   const [open,setOpen] = useState(false);
-   const [open1,setOpen1] = useState(false);
-   const [open2,setOpen2] = useState(false);
-   const [open3,setOpen3] = useState(false);
+  //  const [open,setOpen] = useState(false);
+  //  const [open1,setOpen1] = useState(false);
+  //  const [open2,setOpen2] = useState(false);
+  //  const [open3,setOpen3] = useState(false);
  
    const [{basket} ,dispatch]=useStateValue()
-   const addToBasket= () => {
-     dispatch({
-     type:'ADD_TO_BASKET',
-     item:{
-       id:id,
-       title: title,
-       price:price,
-       image: image,
+    const addToBasket= () => {
+      dispatch({
+      type:'ADD_TO_BASKET',
+      item:{
+       id: id,
+        title: title,
+        price:price,
+        image:image,
+ 
+    }
+    })
  
    }
-   })
- 
-  }
   
 
     
@@ -95,7 +95,7 @@ function Recentimage1 (props, {image,title,price,id, match}){
             Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
             nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
           <div>  <hr/>
-             <p >color : <ul><a href=""> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
+             <p >color : <ul><a href="/"> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
                     </div>  
              <div>      
            <hr/>
@@ -112,7 +112,7 @@ function Recentimage1 (props, {image,title,price,id, match}){
   </Dropdown.Menu>
 </Dropdown></p> 
 <hr/>
-
+{/* 
 {
            Array()
            .fill()
@@ -120,24 +120,24 @@ function Recentimage1 (props, {image,title,price,id, match}){
  
            <h1></h1>
           ))
-       }
+       } */}
 
  
 
 
                </div>
                <div>
-               <button onClick={addToBasket} className="addbutton">ADD TO CART <GrCart className="productcart"/></button></div>
+               <button className="addbutton" onClick={addToBasket}>ADD TO CART  <GrCart className="productcart"/></button></div>
              <div>
 
-               <a href=""> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
+               <a href="/"> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
              </div>
  </div>
  
    </div>
 
 <hr/>
-
+{/* 
 <div className="collapsible">
 <div class="row ">
 <div className="col-sm-12">
@@ -254,8 +254,8 @@ function Recentimage1 (props, {image,title,price,id, match}){
       </Collapse>
 
 </div>
-</div>
-   </div>
+</div>  
+   </div> */}
   </div> : <div>
     no product
   </div>

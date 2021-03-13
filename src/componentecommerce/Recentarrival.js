@@ -11,15 +11,15 @@ import { useStateValue } from '../background/StateProvider';
 
 
 
-  const [{basket} ,dispatch]=useStateValue()
+  const [{basket} ,dispatch]=useStateValue(0);
     const addToBasket= () => {
       dispatch({
       type:'ADD_TO_BASKET',
       item:{
         id:id,
         title: title,
-        image: image,
-        price: price
+         image: image,
+         price: price
       }
     })
  
@@ -36,8 +36,8 @@ import { useStateValue } from '../background/StateProvider';
 <div className="productinfo">
 <p className="producttype">Furnitures</p>
 
-  <a className="titlelink" href=""><p >{title}</p></a>
-  <a className="productprice">  <p className="productprice">
+  <a className="titlelink" href="/"><p >{title}</p></a>
+  <a className="productprice" href="/">  <p className="productprice">
        <small >$</small>
        <strong className="recentimg1">{price} </strong> 
       </p> </a> 

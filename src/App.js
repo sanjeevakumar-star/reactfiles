@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./componentecommerce/Checkout";
@@ -15,6 +15,7 @@ import DecorationProducts from "./components/DecorationProducts";
 import ReactTabs from "./background/ReactTabs";
 import FurnituresProducts from "./components/furnitures_products";
 import Checkoutshop from "./components/checkoutshop";
+// import Recentimage from './background/Recentimage1';
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
           <div>
             <Header />
 
-            <Route exact path="/" component={data} />
+             <Route exact path="/" component={data} /> 
 
-            <Route path="/login" component={Login} />
+          <Route path="/login" component={Login} /> 
 
             <Route path="/checkout" component={Checkout} />
 
-            <Route path="/system/:id" component={Recentimage1} />
+           <Route path="/system/:id" component={Recentimage1} /> 
+            {/* <Route path="/system/:id" component={Recentimage} /> */}
 
             <Route path="/ProductDetails" component={ProductDescription} />
 

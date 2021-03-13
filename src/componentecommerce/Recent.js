@@ -25,44 +25,44 @@ function Recent({ image, title, price, id }) {
 
   return (
     <div className="container">
-      <div className="container">
-        <Slider>
+      <div className="row">
+<div className="col-md-12">
+
+     
+
+   <div className="container">
+        
           <div className=" product">
             <Link to={`/system/${id}`}>
-              {" "}
-              <a href="">
+             
+             
                 <img className="imagepro" src={image} alt="" />
-              </a>{" "}
+             
+               
             </Link>
             <div className="productinfo">
               <p className="producttype">Furnitures</p>
               <Link to={`/system/${id}`}>
-                <a className="titlelink" href="">
+                <a className="titlelink" href="/">
                   <p>{title} </p>
                 </a>
               </Link>
-              <a className="productprice">
+              {/* <a className="productprice"> */}
                 <p className="productprice">
                   <small>$</small>
                   <strong>{price}</strong>
                 </p>
-              </a>
-              {/*  
- {
-           Array()
-           .fill()
-          .map(( )=>(
- 
-           <h1></h1>
-          ))
-       } */}
+    
             </div>
 
-            <button className="addbutton" onClick={addToBasket}>
+             <button className="addbutton" onClick={addToBasket}>
               ADD TO CART <GrCart className="productcart" />
-            </button>
+            </button> 
           </div>
-        </Slider>
+       
+      </div>
+      </div>
+
       </div>
     </div>
   );

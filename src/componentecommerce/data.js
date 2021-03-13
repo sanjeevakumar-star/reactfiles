@@ -14,16 +14,15 @@ function Data(){
         <div>
            
 
- <Center/>
-   <Images/>
-    <Trendproduct/>
-     <Shopcategories/>
-       <Recentarrivalproducts/>
-         <Payment/>
-           <Blogs/>
+   <Center/>   
+   <Images/>      
+          <Trendproduct/>    
+       <Shopcategories/>   
+         <Recentarrivalproducts/>  
+          <Payment/>  
+         <Blogs/>   
            
-           
-               {/* <Pro/> */}
+                {/* <Pro/>  */}
         </div>
     )
 }
