@@ -1,105 +1,132 @@
-import React, { useState,  } from "react"
-import Recentimagecss from '../background/Recentimage.css';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import {Dropdown} from 'react-bootstrap'
+import React, { useState } from "react";
+import Recentimagecss from "../background/Recentimage.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Dropdown } from "react-bootstrap";
 //import {DropdownButton} from 'react-bootstrap';
-import {Navbar,Nav} from "react-bootstrap"
-import {GrCart} from 'react-icons/gr';
-import {AiOutlineFacebook ,AiFillTwitterSquare}  from 'react-icons/ai';
+import { Navbar, Nav } from "react-bootstrap";
+import { GrCart } from "react-icons/gr";
+import { AiOutlineFacebook, AiFillTwitterSquare } from "react-icons/ai";
 
-import {FaInstagramSquare,FaThumbsDown ,FaThumbsUp} from 'react-icons/fa';
-import { useStateValue } from '../background/StateProvider';
+import { FaInstagramSquare, FaThumbsDown, FaThumbsUp } from "react-icons/fa";
+import { useStateValue } from "../background/StateProvider";
 // import Collapse from 'react-bootstrap/Collapse'
-// import {Link} from "react-router-dom"; 
+// import {Link} from "react-router-dom";
 
-// import pro from "../background/pro.json"; 
+// import pro from "../background/pro.json";
 //  import ProductDescription from "../background/ProductDescription.js";
-
-function ProductDetails ({id,image,title,price}){
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+toast.configure();
+function ProductDetails({ id, image, title, price }) {
   // const [open,setOpen] = useState(false);
   // const [open1,setOpen1] = useState(false);
   // const [open2,setOpen2] = useState(false);
   // const [open3,setOpen3] = useState(false);
 
-  const [{basket} ,dispatch]=useStateValue()
-  const addToBasket= () => {
+  const notify = () => {
+    toast("Item added");
+  };
+
+  const [{ basket }, dispatch] = useStateValue();
+  const addToBasket = () => {
     dispatch({
-    type:'ADD_TO_BASKET',
-    item:{
-      id:id,
-      title: title,
-      price:price,
-      image: image,
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        price: price,
+        image: image,
+      },
+    });
+  };
 
-  }
-  })
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <Navbar>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link href="http://localhost:3000/">Home</Nav.Link>
+                <Nav.Link href="#link">Shop</Nav.Link>
+                <Nav.Link href="#link">Default</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+          <a href="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg">
+            <img className="background_image1_image" src={image} alt={title} />
+          </a>
+        </div>
 
- }
- 
-return(<div className="container">
-<div className="row">
-<div className="col-md-6">
-<Navbar>
-<Navbar.Toggle aria-controls="basic-navbar-nav" />
- <Navbar.Collapse id="basic-navbar-nav">
-   <Nav className="mr-auto">
-     <Nav.Link href="http://localhost:3000/">Home</Nav.Link>
-     <Nav.Link href="#link">Shop</Nav.Link>
-     <Nav.Link href="#link">Default</Nav.Link>
+        <div className="col-md-6 productdetails">
+          <h3>{title}</h3>
+          <h3>${price}</h3>
+          {/* */}{" "}
+          <p className="sd">
+            Morbi purus libero, faucibus adipiscing, commodo quis, gravida id,
+            est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper
+            lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi
+            neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus
+            pede arcu, dapibus eu,
+          </p>
+          <div>
+            {" "}
+            <hr />
+            <p>
+              color :{" "}
+              <ul>
+                <a href="/">
+                  {" "}
+                  <li className="green">green</li>
+                  <li className="red">red</li>
+                </a>
+              </ul>{" "}
+            </p>
+          </div>
+          <div>
+            <hr />
+            <p className="productsizelist">
+              size:{" "}
+              <Dropdown>
+                <Dropdown.Toggle variant="" id="dropdown-basic">
+                  Select a Size
+                </Dropdown.Toggle>
 
-     </Nav>
-     </Navbar.Collapse>
-     </Navbar>
-   <a href="https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-1-2.jpg">
-  <img className="background_image1_image" src={image}  alt={title} />
-   </a>
-      
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">Small</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">Medium</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Large</Dropdown.Item>
+                  <Dropdown.Item href="#/action-3">Extra Large</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </p>
+            <hr />
+          </div>
+          <div>
+            <button
+              onClick={addToBasket}
+              onClickCapture={notify}
+              className="addbutton"
+            >
+              ADD TO CART <GrCart className="productcart" />
+            </button>
+          </div>
+          <div>
+            <a href="/">
+              {" "}
+              <p className="share">
+                Share :<AiOutlineFacebook />
+                <FaInstagramSquare />
+                <AiFillTwitterSquare />
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
 
-
-</div>
-
- <div className="col-md-6 productdetails">
-
-  <h3>{title}</h3>  
-       <h3>${price}</h3> 
-    {/* */} <p className="sd">Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
-           Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar
-           nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu,</p>
-         <div>  <hr/>
-            <p >color : <ul><a href="/"> <li className="green">green</li><li className="red">red</li></a></ul> </p> 
-                   </div>  
-            <div>      
-          <hr/>
-          <p className="productsizelist">size:  <Dropdown>
- <Dropdown.Toggle variant="" id="dropdown-basic">
- Select a Size
- </Dropdown.Toggle>
-
- <Dropdown.Menu>
-   <Dropdown.Item href="#/action-1">Small</Dropdown.Item>
-   <Dropdown.Item href="#/action-2">Medium</Dropdown.Item>
-   <Dropdown.Item href="#/action-3">Large</Dropdown.Item>
-   <Dropdown.Item href="#/action-3">Extra Large</Dropdown.Item>
- </Dropdown.Menu>
-</Dropdown></p> 
-<hr/>
-
-
-
-
-              </div>
-              <div>
-              <button onClick={addToBasket} className="addbutton">ADD TO CART <GrCart className="productcart"/></button></div>
-            <div>
-
-              <a href="/"> <p className="share">Share :<AiOutlineFacebook/><FaInstagramSquare/><AiFillTwitterSquare/></p></a> 
-            </div>
-</div>
-
-  </div>
-
-<hr/>
-{/*
+      <hr />
+      {/*
 <div className="collapsible">
 <div class="row ">
 <div className="col-sm-12">
@@ -218,10 +245,8 @@ return(<div className="container">
 </div>
 </div>
   </div>  */}
- <hr/>
-
-   </div>); 
-
-   
+      <hr />
+    </div>
+  );
 }
 export default ProductDetails;

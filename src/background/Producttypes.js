@@ -9,6 +9,7 @@ import { useStateValue } from '../background/StateProvider';
 import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
 import { Link } from "react-router-dom";
 import ReactTabs from '../background/ReactTabs';
+import Recentarrivalproducts from  '../componentecommerce/Recentarrivalproducts.js'
 function Producttypes(props,{image,title,price,id,catagory}){
 
   

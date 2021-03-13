@@ -3,10 +3,10 @@ import ReactTabscss from '../background/ReactTabs.css'
 import {Tab} from 'react-bootstrap'
 import Producttypes from '../background/Producttypes';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import {Navbar,NavDropdown,Nav, FormControl,Form,Button,} from "react-bootstrap"
-import {BrowserRouter as  Router,Switch,Route} from "react-router-dom"
+import {Nav, } from "react-bootstrap"
+// import {BrowserRouter as  Router,Switch,Route} from "react-router-dom"
 import Lightings from '../components/Lightings';
-
+import Recentarrivalproducts from  '../componentecommerce/Recentarrivalproducts.js'
 import DecorationProducts from '../components/DecorationProducts';
 import FurnituresProducts from '../components/furnitures_products';
 function ReactTabs(){
@@ -49,7 +49,7 @@ function ReactTabs(){
             <Tab.Content className="typeof">
 
               <Tab.Pane  className="typeof" eventKey="first">
-           <Producttypes/>
+              <Recentarrivalproducts/> 
               </Tab.Pane>
 
               <Tab.Pane  className="typeof" eventKey="second">
